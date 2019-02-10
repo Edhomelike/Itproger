@@ -297,7 +297,6 @@ h2 {
 .testi__content {
     position: relative;
     top: 0;
-    width: 380px!important;
     margin-bottom: 30px;
     padding-left: 27px;
     padding-right: 27px;
@@ -388,7 +387,7 @@ h2 {
 }
 .idea_btn-play {
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     display: block;
     width: 56px;
     height: 56px;
@@ -616,6 +615,55 @@ h2 {
     .features__text {
         margin-bottom: 30px;
     }
+    .testi {
+        padding-bottom: 80px;
+    }
+    .testi__title {
+        text-align: left;
+    }
+    .testi__content {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    }
+    .testi__content:hover {
+        top: 0;
+        box-shadow: none;
+    }
+    .testi__content::after {
+        display: none;
+    }
+    .testi__item {
+        margin-bottom: 30px;
+    }
+    .testi__title {
+        margin-bottom: 50px;
+    }
+    .idea {
+    padding-top: 50px;
+    }
+    .idea::before {
+        display: none;
+    }
+        .idea::after {
+        display: none;
+    }
+    .idea__image-wrap {
+        max-width: 380px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 991px) {
+    .idea__item-content-left {
+    margin-left: 90px;
+    margin-right: 0;
+    text-align: left;
+}
+    .idea__image-left {
+    float: left;
+    }
+    .sumscribe {
+    padding-bottom: 65px;
 }
 @media screen and (max-width: 480px) {
     h2 {
@@ -632,6 +680,35 @@ h2 {
     .hero__title {
         font-size: 45px;
         line-height: 1.2;
+    }
+    .testi {
+        font-size: 45px;
+    }
+    .testi__title {
+        margin-bottom: 10px;
+    }
+    .download {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .subscribe__title, 
+    .subscribe__text,
+    .download__title,
+    .download__tex {
+        text-align: left;
+    }
+    .download__title {
+        margin-top: 30px;
+    }
+    .download__logo {
+        margin: 0;
+    }
+    .download__market {
+        margin: 52px 0 0 0;
+    }
+    .nav__item {
+        font-size: 16px;
+        margin-bottom: 25px;
     }
 }
 /* ==========================================================================
